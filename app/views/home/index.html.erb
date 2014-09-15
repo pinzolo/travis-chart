@@ -1,9 +1,11 @@
 <h1><%= @repo.slug %></h1>
-<%= form_tag root_path, method: :get do %>
-  <%= select_tag :env, options_for_select(@envs, @env) %>
+<%= form_tag root_path, method: :get, role: 'form' do %>
+  <div class="form-group">
+    <label for="env">Select env</label> : <%= select_tag :env, options_for_select(@envs, @env), class: 'form-control' %>
+  </div>
 <% end %>
 <br />
-<table>
+<table class="table">
   <thead>
     <tr>
       <th></th>
