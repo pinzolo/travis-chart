@@ -39,5 +39,5 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'travis'
-gem 'pry-rails'
-gem 'pry-byebug'
+gem 'twitter-bootstrap-rails'
+gem 'therubyracer'
